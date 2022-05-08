@@ -1,0 +1,491 @@
+@font-face {
+    font-family:NetflixSansRegular;
+    src: url(Font/NetflixSansRegular.ttf);
+}
+body{
+    font-family:NetflixSansRegular;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    
+}
+.background-1{
+    height: 80vh;
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    border-bottom: 8px solid #222;
+}
+.gradient{
+    height: 80vh;
+    background-image: linear-gradient(to top,rgba(0,0,0,0) 0%,rgba(0,0,0,.7) 90%),radial-gradient(50% 100%,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%);
+}
+.backg-content{
+    width: -webkit-fill-available;
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+}
+.backg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: -webkit-fill-available;
+    position:absolute;
+    top: 0;
+    z-index: 2;
+    margin-left: 52px;
+    margin-right: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+}
+#enter{
+    background: #e50914;
+    width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.email-add{
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top:7%;
+}
+.email-add h1{
+    margin-top: 20px;
+    font-size: 4rem;
+}
+.email-add h2{
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+.email-add h3{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.email-add > div{
+    width: 40%;
+    display: flex;
+    margin-top: 20px;
+}
+.email-add input{
+    height:60px;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+}
+.email-add a > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 130%;
+    padding: 10px;
+    color: white;
+    background: #e50914;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.email-add button:hover{
+    background: #f40612;
+}
+svg{
+    height: 20px;
+    margin-left: 10px;
+}
+svg > path{
+    fill: white;
+}
+
+.card{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 45px;
+    background: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: 8px solid #222;
+}
+.card1-text, .card2-text, .card3-text,.card4-text{
+    width: 50%;
+    color: white;
+    text-align: justify;
+}
+.card1-video,.card2-animation, .card3-video,.card4-image{
+    width: 50%;
+}
+.card1-text h1{
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+.card1-text h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card1-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1-video video{
+    width: 100%;
+}
+.anim-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anim-content img{
+    width: 80%;
+}
+.animation{
+    position: absolute;
+    margin-top: 15%;
+    z-index: 1;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: black;
+    overflow: hidden;
+    max-width: 600px;
+}
+.capa{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:60% ;
+}
+.progress h1{
+    color: white;
+    font-size: 20px;
+}
+.progress h2{
+    font-size: 16px;
+    color: #0071eb;
+}
+.animation-complete{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2-text h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.card2-text h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card3-text h1{
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+.card3-text h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card3-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card3-video video{
+    width: 100%;
+}
+.card4-image img{
+    width: 85%;
+}
+.card4-text h1{
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+.card4-text h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.questions-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 45px;
+    background: black;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.questions-container > h1{
+    color: white;
+    margin-bottom: 5%;
+    font-size: 50px;
+}
+.question{
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    color: white;
+    background: #303030;
+    margin-bottom: 8px;
+    padding: .8em 2.2em .8em 1.2em;
+    cursor: pointer;
+}
+.question img{
+    width: 23px;
+    transition: .1s;
+}
+.question h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.answer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: .8em 2.2em .8em 1.2em;
+    background: #303030;
+    color: white;
+    width: 50%;
+    margin-bottom: 8px;
+    transition: .2s;
+}
+.answer h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.ready{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #e50914;
+}
+footer h1{
+    color: white;
+    font-size: 20px;
+}
+.ready h3{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.ready > div{
+    padding-bottom: 130px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.ready input{
+    height:60px;
+    width: 90%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+}
+.ready button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 130%;
+    padding: 10px;
+    color: white;
+    background: #e50914;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.ready button:hover{
+    background: #f40612;
+}
+svg{
+    height: 20px;
+    margin-left: 10px;
+}
+svg > path{
+    fill: white;
+}
+@media screen and (max-width:700px) {
+    .logo{
+        width: 150px;
+    }
+    .menu{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .email-add{
+        margin-top: 25%;
+    }
+    .email-add h1{
+        font-size: 2rem;
+    }
+    .email-add h2{
+        font-size: 1.5rem;
+    }
+    .email-add h3{
+        font-size: 1.0rem;
+    }
+    .email-add > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    a{
+        width: auto;
+    }
+    svg{
+        width: 16px;
+        height: 16px;
+    }
+    .email-add a > button{
+        height: 50px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .email-add input{
+        background: white;
+        height: 50px;
+        width: 65%;
+        font-size: 12px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card1-text, .card2-text, .card3-text, .card4-text {
+        width: 100%;
+    }
+    .card1-text h1, .card2-text h1, .card3-text h1, .card4-text h1 {
+        font-size: 2.0rem;
+    }
+    .card1-text h2, .card2-text h2, .card3-text h2, .card4-text h2 {
+        font-size: 1.0rem;
+    }
+    .card1-video, .card2-animation, .card3-video, .card4-image {
+        width: 100%;
+        overflow: hidden;
+    }
+    .anim-content{
+        overflow: hidden;
+    }
+    .anim-content img{
+        width: 150%;
+    }
+    .animation img{
+        width: 100%;
+    }
+    .animation{
+        margin-top: 60%;
+        width: 80%;
+    }
+    .progress h2{
+        font-size: 14px;
+    }
+    .card2-text{
+        margin-top: 5%;
+    }
+    .card1-video video{
+        width: 150%;
+    }
+    .card3-video video{
+        width: 150%;
+    }
+    .card4-image img{
+        width: 105%;
+    }
+    .questions-container h1{
+        font-size: 2.0rem;
+    }
+    .question{
+        width: 85%;
+    }
+    .question h1{
+        font-size: 1.2rem;
+    }
+    .answer{
+        width: 85%;
+    }
+    .question img {
+        width: 20px;
+    }
+    .answer h1{
+        font-size: 1rem;
+    }
+    .ready h3{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .ready div{
+        width: 90%;
+    }
+    .ready button{
+        height: 50px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .ready input{
+        background: white;
+        height: 50px;
+        width: 65%;
+        font-size: 12px;
+    }
+    footer h1{
+        font-size: 0.7rem;
+    }
+}
